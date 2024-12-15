@@ -16,68 +16,169 @@ header{
 }
 
 /**** Menu Style *****************************************/
+
+/* 
+
 nav {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(250, 248, 248);
 }
+ */
+
+
+
+
+
+
+
+
+
+
+/* the list itself*/
 
 ul.navlist{
+
+    
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    
+    margin: 0px  0px 0px 0px;             /*-------------> push "paige box & rest of the content" further down       */
+
+
+    padding: 0px 0px 0px 30px;             /*-------------> push "Home" to the left        */
+    
+    
     overflow: hidden;
-    background-color: #333;
+    
+    
+    background-color: #494747;             /*------------->  change "menu background colour"        */
 }
+
+
+
+
+
+
+/* inside the list */
 
 ul.navlist li
 {
     float: left;
     display: inline;
+
+
+    
+    margin: 10px  50px 10px 0px;
+    
+    
+    color: rgb(255, 255, 255);
 }
+
+
+
+
+
+
+
 
 ul.navlist li a {
+
+
+
     display: block;
-    color: white;
+    
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+
+    
+
+
+    
 }
 
+
 ul.navlist li a:hover {
-    background-color: #111;
+    background-color: #060606;
 }
+
+
+
+
+
+
+
+
 
 /**** Styling for main part */
 
 main {
-    border-bottom: 0.5rem solid;
+    border-bottom: 16px solid;
     box-sizing: border-box;
+
+    
+    min-height: 70%;
+    
+
+    display: flex;
+    flex-wrap: wrap;
+
+
     /*ToDo: Make this a flexible container; 
     You can find the following helpful: display, flex-wrap, width, min-height, height
     See lecture slides*/
 }
 
+
+
+
+
 section, aside {
-    padding: 0.5rem;
+
+    margin: 0px 0px 20px 0px;
+
     box-sizing: border-box;
-    min-height: 100%;
+    
+
 }
 
+
+
+
 aside {
+    
     /*ToDo: Set width.ToDo: For fluid layouts, use min-width, max-width, and set to relative 
    values, like 25% of the page.*/ 
-    background-color: #deded8;
+    background-color: #98988d;
+
+    max-height: 460px;
+
+    width: 25%;
+
 }
 
 section {
+   
     /*ToDo: Set width. For fluid layouts, use min-width, max-width, and set to relative 
    values, like 75% of the page.*/
+
+
+   padding-left: 150px;
+   margin-top: 10px;
+
+
+   width: 50%;
 }
+
+
+
+
+
+
 
 /*Styling for search in aside*/
 .search{
     display: block;
     width: auto;
     text-align: left;
+
+    margin: 10px 0px 0px 10px;
 }
 
 .center {
@@ -88,12 +189,18 @@ section {
     padding: 10px;
   }
 
+
+
 /* Styling for text inputs in the form*/
+
+
 .textInput {
     display: block;
     width: auto;
     text-align: left;
 }
+
+
 
 /*Styling with a media query - lecture slide 36*/
 @media screen and (max-width: 700px) {
